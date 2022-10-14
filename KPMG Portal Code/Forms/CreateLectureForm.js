@@ -23,7 +23,7 @@ if (typeof (entityFormClientValidate) != 'undefined') {
                lectures.forEach(function(lecture){
                             let startDate2 = new Date(lecture.kpmg_startdate);
                             let endDate2 = new Date(lecture.kpmg_startdate);
-                            endDate2.addMinutes(lecture.durationinhours);
+                            endDate2.addMinutes(lecture.kpmg_durationinhours);
                             if(startDate1 < endDate2 && endDate1 > startDate2)
                                 isOverlapping = true;
                         });
